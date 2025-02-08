@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import './App.css'
+import './css/App.css'
 import MovieCard from './components/MovieCard'
 import Home from "./pages/Home"
-import Favourites from './pages/Favorties'
+import Favorites from './pages/Favorties'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import NavBar from './components/NavBar'
 
@@ -14,7 +14,7 @@ function App() {
     <main className='main-content'>
       <Routes>
         <Route path="/" element={<Home />}/>
-        <Route path="/Favorites" element={<Favourites />}/>
+        <Route path="/Favorites" element={<Favorites />}/>
       </Routes>
     </main>
     </div>
